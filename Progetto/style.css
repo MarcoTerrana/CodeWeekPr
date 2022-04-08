@@ -1,0 +1,156 @@
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    font-family:'Verdana', cursive;
+    font-size: 15px;
+    line-height: 20px;
+}
+p {
+    margin: 0 auto;
+    margin-top: 5px;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 5px;
+    padding: 15px;
+}
+header {
+    background: rgb(255, 255, 255);
+    padding: 10px 0 0 0;
+}
+
+
+header .center {
+    margin: 0 auto 0 auto;
+    display: block;
+    background-color: rgb(189, 186, 186) ;
+}
+.hero {
+    background: #fff;
+    padding: 0 0 0 0;
+}
+
+.hero img {
+    
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+.hero .abv {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+.hero .abv h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+    line-height:80px;
+
+
+}
+.flex-container {
+    margin-top: 0;
+    width: 100%;
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.flex-container .flex-item {
+    margin: 20px auto;
+    min-width: 300px;
+    background-color: #fff;
+    border-style: outset;
+    border-radius: 30px;
+    flex-direction: row-reverse;
+    flex-shrink: 3; 
+    color: #000;
+    flex-grow: 1;
+    height: auto;
+    transition: all 0.6 ease-out 0.3;
+}
+.flex-container .flex-item h2 {
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    
+}
+.flex-container .flex-item p {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    padding: 0 10px;
+}
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    background: #000;
+    padding: 100px 50px;
+}
+
+footer p {
+    
+    padding: 0;
+    height: auto;
+    text-align: center;
+    color: #fff;
+}
+
+footer p a.credits {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer p a.credits:hover {
+    text-decoration: none;
+}
+@media all and (max-width: 990px) {
+    html, body {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    header img {
+        width: 100px;
+        height: auto;
+    }
+    .hero .abv h1 {
+        padding-bottom: 100px;
+        font-size: 50px;
+        line-height:20px;
+    }
+
+    .flex-container{
+        padding: 50px 20px 50px 20px;
+    }
+
+    .flex-container h2 {
+        font-size: 30px;
+        line-height:  20px ;
+       
+    }
+
+    footer {
+        padding: 50px 20px;
+        margin-bottom: 0;
+    }
+
+
+ }
+     

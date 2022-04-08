@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href=link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./normalize.css">
+
+    <title>Progetto1</title>
+</head>
+<body>
+    <header class="header">
+        <img class="center" src=https://tse1.mm.bing.net/th?id=OIP.7G7V0foSLBACKeMGfcWEtAHaG_&pid=Api&P=0&w=168&h=158 alt="header" border="0" />
+    </header>
+
+    <div class="hero">
+        <img src=http://officialpsds.com/imageview/r1/8q/r18qyp_large.png?1542853939 alt="hero"  width="100" height="100"/>
+
+        <div class="abv">
+          <h1>Fasce Bonus</h1>
+        </div>
+    </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+    <div class="flex-container">
+
+        <div class="flex-item">
+            <h2>Tra i 18 e i 35 anni</h2>
+              <ul class="firstLis">   
+              </ul>
+        </div>
+        <div class="flex-item">
+            <h2>Tra i 36 e i 64 anni</h2>
+            <ul class="secondLis">    
+            </ul>
+        </div>
+        <div class="flex-item">
+            <h2>Over 64</h2>
+            <ul class="thirdLis">     
+            </ul>
+        </div>
+
+    </div>
+    <footer>
+        <p>
+           Edgemony srl P. Iva 123456 - 
+           Credits <a href="https://www.linkedin.com" target="_blank" class="credits">Marco Terrana
+        </p>
+    </footer>
+
+    <script type="text/javascript" src="https://scrollmagic.io/scrollmagic/uncompressed/ScrollMagic.js"></script>
+
+    <script>
+        
+
+         var controller = new ScrollMagic.Controller();
+
+         
+         new ScrollMagic.Scene({triggerElement: ".header"})
+             .setClassToggle(".header", "active") // add class toggle
+             .addTo(controller);
+         
+             new ScrollMagic.Scene({triggerElement: ".flex-item"})
+             .setClassToggle(".flex-item", "active") // add class toggle
+             .addTo(controller);
+
+    </script>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
